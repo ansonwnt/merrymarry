@@ -327,7 +327,7 @@ export default function Home() {
       }}
     >
       <div className="min-h-screen" style={{ background: "rgba(30,0,50,0.35)" }}>
-        <div className="flex flex-col items-center px-4 py-16 min-h-screen">
+        <div className="flex flex-col items-center px-3 md:px-6 py-16 min-h-screen">
 
           {/* ── Main Card ── */}
           <div className="w-full max-w-3xl relative mt-20">
@@ -343,7 +343,7 @@ export default function Home() {
             <div className="w-full rounded-3xl shadow-2xl overflow-hidden bg-white">
 
               {/* Names + date */}
-              <div className="text-center pt-20 pb-6 px-8">
+              <div className="text-center pt-20 pb-6 px-4 md:px-8">
                 <h1
                   className="text-5xl md:text-6xl tracking-wide"
                   style={{ color: "#2A2A2A", fontFamily: "var(--font-cormorant)", fontWeight: 300 }}
@@ -358,15 +358,15 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Two-column: countdown | message */}
-              <div className="flex border-t" style={{ borderColor: "#F0E2C0" }}>
-                {/* Left — countdown */}
-                <div className="w-56 shrink-0 border-r" style={{ borderColor: "#F0E2C0", background: "#FAF5FF" }}>
+              {/* Countdown | message — stacked on mobile, side-by-side on md+ */}
+              <div className="flex flex-col md:flex-row border-t" style={{ borderColor: "#F0E2C0" }}>
+                {/* Countdown */}
+                <div className="md:w-56 md:shrink-0 border-b md:border-b-0 md:border-r" style={{ borderColor: "#F0E2C0", background: "#FAF5FF" }}>
                   <Countdown />
                 </div>
 
-                {/* Right — bilingual message */}
-                <div className="flex-1 px-8 py-8 flex flex-col gap-5 text-sm leading-relaxed" style={{ color: "#2A2A2A" }}>
+                {/* Bilingual message */}
+                <div className="flex-1 px-6 md:px-8 py-6 md:py-8 flex flex-col gap-5 text-sm leading-relaxed" style={{ color: "#2A2A2A" }}>
                   <div>
                     <p className="mb-2">
                       Having you with us on our big day is already the greatest gift. We are so grateful for every laugh, every memory, and every bit of love you&apos;ve poured into our lives.

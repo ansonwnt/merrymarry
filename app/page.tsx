@@ -18,13 +18,15 @@ type CheckoutData = {
   amount: string;
 };
 
+const BASE = process.env.NODE_ENV === "production" ? "/merrymarry" : "";
+
 // ── Seed data ──────────────────────────────────────────────────────────────
 
 const GIFTS: GiftItem[] = [
   { id: "1", title: "Dinner on Big Day", titleZh: "婚宴晚餐", category: "Celebration", categoryZh: "慶典", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80" },
   { id: "2", title: "New Home Furniture", titleZh: "新居家具", category: "Home", categoryZh: "家居", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" },
   { id: "3", title: "Honeymoon", titleZh: "蜜月旅行", category: "Honeymoon Fund", categoryZh: "蜜月基金", image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80" },
-  { id: "4", title: "Russian Roulette", titleZh: "俄羅斯轉盤", category: "Fun & Games", categoryZh: "玩樂遊戲", image: "/russian-roulette.jpg" },
+  { id: "4", title: "Russian Roulette", titleZh: "俄羅斯轉盤", category: "Fun & Games", categoryZh: "玩樂遊戲", image: `${BASE}/russian-roulette.jpg` },
   { id: "5", title: "Feed My Baby", titleZh: "餵飽寶寶", category: "Family", categoryZh: "家庭", image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80" },
 ];
 
@@ -334,7 +336,7 @@ export default function Home() {
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 z-10">
               <div className="w-32 h-32 rounded-full border-4 overflow-hidden shadow-xl" style={{ borderColor: "#fff" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/couple.jpg" alt="Jacky & Angel" className="w-full h-full object-cover object-top" />
+                <img src={`${BASE}/couple.jpg`} alt="Jacky & Angel" className="w-full h-full object-cover object-top" />
               </div>
             </div>
 

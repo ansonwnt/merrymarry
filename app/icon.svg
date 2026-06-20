@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="#4A2060"/>
+
+  <!-- Left ring (drawn first = behind) -->
+  <circle cx="12" cy="17" r="5.5" fill="none" stroke="#DFD0A8" stroke-width="2"/>
+
+  <!-- Right ring (drawn second = in front where they overlap) -->
+  <circle cx="20" cy="17" r="5.5" fill="none" stroke="#F0E2C0" stroke-width="2"/>
+
+  <!-- Cover left-half of right ring overlap with background so left ring peeks through at top -->
+  <path d="M16.5 11.6 A 5.5 5.5 0 0 0 16.5 22.4" fill="none" stroke="#4A2060" stroke-width="2.4"/>
+
+  <!-- Redraw left ring right arc (bottom of overlap) so it appears in front of right ring there -->
+  <path d="M7.5 17 A 5.5 5.5 0 0 0 12 22.5 A 5.5 5.5 0 0 0 16.5 17" fill="none" stroke="#DFD0A8" stroke-width="2"/>
+
+  <!-- Diamond on left ring -->
+  <polygon points="12,8 14,10.5 12,13 10,10.5" fill="#F0E2C0"/>
+  <line x1="12" y1="8" x2="14" y2="10.5" stroke="#4A2060" stroke-width="0.3"/>
+  <line x1="14" y1="10.5" x2="12" y2="13" stroke="#4A2060" stroke-width="0.3"/>
+  <line x1="12" y1="13" x2="10" y2="10.5" stroke="#4A2060" stroke-width="0.3"/>
+  <line x1="10" y1="10.5" x2="12" y2="8" stroke="#4A2060" stroke-width="0.3"/>
+  <line x1="10" y1="10.5" x2="14" y2="10.5" stroke="#4A2060" stroke-width="0.3"/>
+</svg>

@@ -66,14 +66,14 @@ export default function ProfilePage() {
           <Field label="電話 Phone Number" type="tel" value={phone} onChange={setPhone} placeholder="+852 xxxx xxxx" />
           <Field label="用家名字 User Name" type="text" value={firstName} onChange={setFirstName} placeholder="First name" />
           <Field label="用家姓氏 Last Name" type="text" value={lastName} onChange={setLastName} placeholder="Last name" />
-          <Field label="伴侶名字 Partner's Name" type="text" value={partnerFirst} onChange={setPartnerFirst} placeholder="Partner's first name" />
-          <Field label="伴侶姓氏 Partner's Last Name" type="text" value={partnerLast} onChange={setPartnerLast} placeholder="Partner's last name" />
+          <Field label="伴侶名字 Partners Name" type="text" value={partnerFirst} onChange={setPartnerFirst} placeholder="Partner's first name" />
+          <Field label="伴侶姓氏 Last Name" type="text" value={partnerLast} onChange={setPartnerLast} placeholder="Partner's last name" />
           <Field label="婚禮日期 Wedding Date" type="date" value={weddingDate} onChange={setWeddingDate} placeholder="" />
 
           {error && <p className="text-xs text-center" style={{ color: "#c0392b" }}>{error}</p>}
 
           <button type="submit" className="w-full py-3 mt-2 rounded-full text-sm tracking-widest" style={{ background: "#4A2060", color: "#F0E2C0", fontFamily: "var(--font-lato)" }}>
-            確認 Confirm
+            確認 Login
           </button>
         </form>
       </main>

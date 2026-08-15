@@ -92,7 +92,7 @@ export default function LandingPage() {
       </section>
 
       {/* About Merry Marry */}
-      <Section title="關於我們" titleEn="Merry Marry">
+      <Section title="美麗婚禮" titleEn="Merry Marry">
         <p style={{ fontFamily: "var(--font-noto)", fontSize: "0.85rem", lineHeight: 1.9, color: "#4A2060" }}>
           規劃婚禮應該是令人興奮而非繁瑣的過程。然而，許多新人仍花費大量時間管理邀請、收集 RSVP、通過試算表追蹤禮金，並手動管理行政事務。
         </p>

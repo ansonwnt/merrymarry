@@ -152,7 +152,7 @@ export default function CustomizePage() {
             </div>
           ) : (
             <button type="submit" className="w-full py-3 rounded-full text-sm tracking-widest" style={{ background: "#4A2060", color: "#F0E2C0", fontFamily: "var(--font-lato)" }}>
-              確認邀請設計 Confirm & Go to Dashboard
+              確認邀請設計，繼續登記收款銀行帳號 Confirm and Proceed to Fund Collection Set Up
             </button>
           )}
         </form>

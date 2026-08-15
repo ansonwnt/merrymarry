@@ -30,7 +30,6 @@ export default function Header({ variant = "public" }: { variant?: HeaderVariant
         <Link href="/landing">
           <Logo size="sm" />
         </Link>
-        <div className="w-8" />
       </header>
 
       {/* Drawer overlay */}

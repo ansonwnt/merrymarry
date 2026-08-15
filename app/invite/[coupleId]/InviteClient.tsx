@@ -152,7 +152,7 @@ export default function InviteClient({ coupleId }: { coupleId: string }) {
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="input-base" placeholder="Your name" required style={inputStyle} />
           </FormField>
 
-          <FormField label="會否出席 Attendance">
+          <FormField label="會否出席 Attendance (Yes/No)">
             <select value={attending} onChange={(e) => setAttending(e.target.value)} style={inputStyle}>
               <option value="yes">✓ 出席 Attending</option>
               <option value="no">✗ 不出席 Not attending</option>
@@ -161,12 +161,12 @@ export default function InviteClient({ coupleId }: { coupleId: string }) {
 
           {attending === "yes" && (
             <>
-              <FormField label="出席人數 Number of Attendance">
+              <FormField label="出席人數 Number of Attendance (人數)">
                 <select value={count} onChange={(e) => setCount(e.target.value)} style={inputStyle}>
                   {[1,2,3,4,5].map((n) => <option key={n} value={n}>{n} 人</option>)}
                 </select>
               </FormField>
-              <FormField label="男方 / 女方賓客 Guest for">
+              <FormField label="男方 / 女方 賓客 Guest for">
                 <select value={side} onChange={(e) => setSide(e.target.value)} style={inputStyle}>
                   <option value="groom">男方 Groom's Side</option>
                   <option value="bride">女方 Bride's Side</option>
@@ -221,7 +221,7 @@ export default function InviteClient({ coupleId }: { coupleId: string }) {
             className="w-full py-3 rounded-full text-sm tracking-widest mt-2"
             style={{ background: submitted ? "#AAA" : "#4A2060", color: "#F0E2C0", fontFamily: "var(--font-lato)" }}
           >
-            {submitted ? "正在提交… Submitting…" : "送出回覆及祝福 Confirm and Proceed to Gift Transfer"}
+            {submitted ? "正在提交… Submitting…" : "送出回覆及祝福\nConfirm and Proceed to Gift Transfer"}
           </button>
         </form>
       </section>
@@ -275,7 +275,7 @@ function GiftCard({ gift, selected, onSelect }: { gift: GiftItem; selected: bool
       <div className="px-2 py-2">
         <p className="text-xs font-semibold" style={{ color: "#4A2060", fontFamily: "var(--font-noto)" }}>{gift.nameZh}</p>
         <p className="text-xs" style={{ color: "#6B3589" }}>{gift.nameEn}</p>
-        <p className="text-xs mt-1" style={{ color: "#4A2060" }}>HK${gift.price}</p>
+        <p className="text-xs mt-1" style={{ color: "#4A2060" }}>$HKD {gift.price}</p>
       </div>
     </button>
   );

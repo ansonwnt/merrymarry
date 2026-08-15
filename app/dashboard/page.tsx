@@ -76,13 +76,13 @@ export default function DashboardPage() {
           <div className="px-4 py-3" style={{ background: "#F5F0FA" }}>
             <p className="text-xs font-semibold tracking-widest" style={{ color: "#4A2060", fontFamily: "var(--font-noto)" }}>賓客出席</p>
           </div>
-          <StatRow label="出席人數 Total Attending" value={`${totalGuests}`} />
-          <StatRow label="男方賓客 Groom's Side" value={`${groomSide}`} />
-          <StatRow label="女方賓客 Bride's Side" value={`${brideSide}`} />
-          <StatRow label="RSVP 回覆數 Responses" value={`${rsvps.length}`} />
+          <StatRow label="出席人數 Total Received" value={`${totalGuests}`} />
+          <StatRow label="男方賓客人數 Pending" value={`${groomSide}`} />
+          <StatRow label="女方賓客人數 Settled to Bank" value={`${brideSide}`} />
+          <StatRow label="下次處理日期 Next Payout" value="—" dim />
           <div className="px-4 py-3">
             <button className="w-full py-2 rounded-full text-xs tracking-widest" style={{ background: "#F0E2C0", color: "#4A2060", fontFamily: "var(--font-lato)" }}>
-              輸出詳細賓客報告 Generate Guest Report
+              輸出詳細賓客報告 Generate Transaction Details
             </button>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function DashboardPage() {
             className="w-full py-3 rounded-full text-sm tracking-widest"
             style={{ background: "#F0E2C0", color: "#4A2060", fontFamily: "var(--font-lato)", border: "1px solid #DDD" }}
           >
-            賓客祝福 Guest Blessings
+            賓客祝福 Guest Blessing
           </button>
           <Link href="/customize" className="w-full">
             <button className="w-full py-3 rounded-full text-sm tracking-widest" style={{ background: "#F0E2C0", color: "#4A2060", fontFamily: "var(--font-lato)", border: "1px solid #DDD" }}>

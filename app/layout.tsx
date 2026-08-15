@@ -21,8 +21,8 @@ const notoSerifTC = Noto_Serif_TC({
 });
 
 export const metadata: Metadata = {
-  title: "Jacky & Angel | 婚禮心意清單",
-  description: "Wedding gift list for Jacky & Angel, 23 July 2026",
+  title: "Merry Marry | 天長地久",
+  description: "Hong Kong's wedding gifting and invitation platform",
 };
 
 export default function RootLayout({

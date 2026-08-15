@@ -86,10 +86,10 @@ export default function LandingPage() {
         </Link>
       </div>
 
-      {/* Section 1: 美麗婚禮 */}
-      <Section label="美麗婚禮 Merry Marry">
+      {/* Section 1: 美滿嫁期 */}
+      <Section label="美滿嫁期 Merry Marry">
         <ZhPara>使用我們的先進功能，告別人事行政工作，一個平台幫到底。</ZhPara>
-        <ZhPara>告別煩瑣的婚禮行政工作。使用美麗婚禮，新人可建立專屬婚禮頁面，發送電子邀請，管理賓客回覆及安全在線收取禮金，讓婚禮籌備更加輕鬆愉快。</ZhPara>
+        <ZhPara>告別煩瑣的婚禮行政工作。使用美滿嫁期，新人可建立專屬婚禮頁面，發送電子邀請，管理賓客回覆及安全在線收取禮金，讓婚禮籌備更加輕鬆愉快。</ZhPara>
         <EnPara>Say goodbye to wedding administration. With Marry, couples can create a personalized wedding page, send digital invitations, manage RSVPs and receive wedding contributions securely online — all in one place.</EnPara>
       </Section>
 
@@ -97,7 +97,7 @@ export default function LandingPage() {
       <Section label="關於我們 About Us">
         <ZhPara>規劃婚禮應是令人興奮而非繁瑣的過程。但是，很多新人仍花費大量時間進行行政工作，包括填寫試算表、追蹤 RSVP 回覆、安排處理及統計禮金，甚至無法全心享受訂婚的喜悅。</ZhPara>
         <EnPara>Planning a wedding should be exciting, not stressful. Yet many couples still spend countless hours managing invitations, guest lists, tracking gifts through spreadsheets, messaging apps and manual administration.</EnPara>
-        <ZhPara>美麗婚禮的使命是：通過現代化的婚禮管理，讓婚禮策劃更輕鬆、嘉賓的祝福更美好。我們的使命是為新人提供安全、透明且方便的平台，簡化婚禮規劃的同時，為賓客提供無縫的贈禮體驗。</ZhPara>
+        <ZhPara>美滿嫁期的使命是：通過現代化的婚禮管理，讓婚禮策劃更輕鬆、嘉賓的祝福更美好。我們的使命是為新人提供安全、透明且方便的平台，簡化婚禮規劃的同時，為賓客提供無縫的贈禮體驗。</ZhPara>
         <EnPara>Merry Marry was created to modernise the wedding gifting experience. Our mission is to provide couples with a secure, transparent and convenient platform that simplifies wedding planning while giving guests a seamless gifting experience.</EnPara>
         <ZhPara>我們相信，新人應把時間和精力投放在人生重要的時刻。</ZhPara>
         <EnPara>We believe couples should spend their time creating memories, not managing paperwork.</EnPara>
@@ -121,7 +121,7 @@ export default function LandingPage() {
       </Section>
 
       {/* Section 4: Why Choose */}
-      <Section label="為何選擇美麗婚禮 Why Choose Merry Marry">
+      <Section label="為何選擇美滿嫁期 Why Choose Merry Marry">
         {REASONS.map((r, i) => (
           <div key={i} className="mb-4">
             <p className="text-sm font-semibold mb-1" style={{ fontFamily: "var(--font-noto)", color: "#4A2060" }}>{r.titleZh}</p>
@@ -221,7 +221,7 @@ export default function LandingPage() {
       <Section label="我們的承諾 Our Commitment">
         <ZhPara>我們正在努力讓婚禮籌備更加簡單、更加愉快，讓每一位新人都能以輕鬆、安心和信任的方式，迎接人生最重要的時刻。</ZhPara>
         <EnPara>We are committed to making wedding planning simpler, more transparent and more enjoyable for modern couples.</EnPara>
-        <ZhPara>美麗婚禮正在成為全港最受信賴的婚禮禮金管理及婚禮管理平台，讓每一份祝福都能以便捷、安心及信任的方式，送達婚禮當天。</ZhPara>
+        <ZhPara>美滿嫁期正在成為全港最受信賴的婚禮禮金管理及婚禮管理平台，讓每一份祝福都能以便捷、安心及信任的方式，送達婚禮當天。</ZhPara>
         <EnPara>Merry Marry aims to be Hong Kong's most trusted wedding gifting and wedding management platform, helping every blessing reach its destination with simplicity, convenience and trust.</EnPara>
       </Section>
 

@@ -161,7 +161,7 @@ export default function InviteClient({ coupleId }: { coupleId: string }) {
 
           {attending === "yes" && (
             <>
-              <FormField label="出席人數 Number of Attendance (人數)">
+              <FormField label="出席人數 Number of Attendance">
                 <select value={count} onChange={(e) => setCount(e.target.value)} style={inputStyle}>
                   {[1,2,3,4,5].map((n) => <option key={n} value={n}>{n} 人</option>)}
                 </select>
@@ -219,7 +219,7 @@ export default function InviteClient({ coupleId }: { coupleId: string }) {
             type="submit"
             disabled={submitted}
             className="w-full py-3 rounded-full text-sm tracking-widest mt-2"
-            style={{ background: submitted ? "#AAA" : "#4A2060", color: "#F0E2C0", fontFamily: "var(--font-lato)" }}
+            style={{ background: submitted ? "#AAA" : "#4A2060", color: "#F0E2C0", fontFamily: "var(--font-lato)", whiteSpace: "pre-line" }}
           >
             {submitted ? "正在提交… Submitting…" : "送出回覆及祝福\nConfirm and Proceed to Gift Transfer"}
           </button>

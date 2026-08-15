@@ -4,10 +4,41 @@ import Link from "next/link";
 import Logo from "../components/Logo";
 import Footer from "../components/Footer";
 import { useState } from "react";
-import { clearUser } from "../lib/storage";
+import { useRouter } from "next/navigation";
+import { setUser, setWedding, generateAccountNumber } from "../lib/storage";
 
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+
+  function handleDemo() {
+    setUser({
+      email: "demo@merrymarry.hk",
+      accountNumber: generateAccountNumber(),
+      phone: "+852 9999 8888",
+      firstName: "Jacky",
+      lastName: "Chan",
+      partnerFirstName: "Angel",
+      partnerLastName: "Lee",
+      weddingDate: "2026-07-23",
+    });
+    setWedding({
+      coupleDisplay: "Jacky & Angel",
+      venue: "The Peninsula Hong Kong",
+      venueZh: "香港半島酒店",
+      bgImage: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=80",
+      profilePic: "",
+      inviteText: "Having you with us on one of the most important days of our lives is truly the greatest gift we could ask for. Thank you for your love, support and friendship throughout our journey.",
+      inviteTextZh: "能有你出席我們最重要的一天，已是我們最大的幸福。感謝你一直以來對我們的關懷與珍惜，我們誠摯地邀請您與我們共同分享我們的喜悅。",
+      giftList: [
+        { id: "1", nameEn: "Banquet", nameZh: "喜宴", price: "1000", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80" },
+        { id: "2", nameEn: "Honeymoon", nameZh: "蜜月旅行", price: "2000", image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=600&q=80" },
+        { id: "3", nameEn: "Custom 1", nameZh: "自訂 1", price: "500", image: "" },
+        { id: "4", nameEn: "Custom 2", nameZh: "自訂 2", price: "500", image: "" },
+      ],
+    });
+    router.push("/dashboard");
+  }
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "#fff", color: "#4A2060" }}>
@@ -163,12 +194,19 @@ export default function LandingPage() {
       </Section>
 
       {/* CTA */}
-      <section className="flex flex-col items-center py-12 px-6">
+      <section className="flex flex-col items-center py-12 px-6 gap-4">
         <Link href="/register">
           <button className="px-10 py-4 rounded-full text-sm tracking-widest" style={{ background: "#4A2060", color: "#F0E2C0", fontFamily: "var(--font-lato)" }}>
             立即開始 Get Started Today
           </button>
         </Link>
+        <button
+          onClick={handleDemo}
+          className="px-10 py-4 rounded-full text-sm tracking-widest"
+          style={{ background: "transparent", color: "#4A2060", border: "1px solid #4A2060", fontFamily: "var(--font-lato)" }}
+        >
+          🎯 體驗示範 Demo Mode
+        </button>
       </section>
 
       <Footer />

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -99,11 +98,6 @@ export default function DashboardPage() {
           >
             賓客祝福 Guest Blessing
           </button>
-          <Link href="/customize" className="w-full">
-            <button className="w-full py-3 rounded-full text-sm tracking-widest" style={{ background: "#F0E2C0", color: "#4A2060", fontFamily: "var(--font-lato)", border: "1px solid #DDD" }}>
-              編輯邀請 Edit Invite
-            </button>
-          </Link>
         </div>
 
         {/* Blessings list */}

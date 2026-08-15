@@ -152,7 +152,7 @@ export default function InviteClient({ coupleId }: { coupleId: string }) {
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="input-base" placeholder="Your name" required style={inputStyle} />
           </FormField>
 
-          <FormField label="會否出席 Attendance (Yes/No)">
+          <FormField label="會否出席 Attendance">
             <select value={attending} onChange={(e) => setAttending(e.target.value)} style={inputStyle}>
               <option value="yes">✓ 出席 Attending</option>
               <option value="no">✗ 不出席 Not attending</option>

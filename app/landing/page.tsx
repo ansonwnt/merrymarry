@@ -88,23 +88,23 @@ export default function LandingPage() {
 
       {/* Section 1: 美滿嫁期 */}
       <Section label="美滿嫁期 Merry Marry">
-        <ZhPara>使用我們的先進功能，告別人事行政工作，一個平台幫到底。</ZhPara>
-        <ZhPara>告別煩瑣的婚禮行政工作。使用美滿嫁期，新人可建立專屬婚禮頁面，發送電子邀請，管理賓客回覆及安全在線收取禮金，讓婚禮籌備更加輕鬆愉快。</ZhPara>
-        <EnPara>Say goodbye to wedding administration. With Marry, couples can create a personalized wedding page, send digital invitations, manage RSVPs and receive wedding contributions securely online — all in one place.</EnPara>
+        <ZhPara>將傳統人情化繁為簡<br />電子請帖、RSVP 管理及網上收禮金，一個平台輕鬆完成。</ZhPara>
+        <ZhPara>告別繁瑣的婚禮行政工作。透過美滿嫁期，新人可建立專屬婚禮頁面、發送電子請帖、管理賓客回覆及安全收取網上禮金，讓婚禮籌備更簡單、更高效。</ZhPara>
+        <EnPara>Say goodbye to wedding administration. With Merry Marry, couples can create a personalised wedding page, send digital invitations, manage RSVPs and receive wedding contributions securely online — all in one place.</EnPara>
       </Section>
 
       {/* Section 2: 關於我們 */}
       <Section label="關於我們 About Us">
-        <ZhPara>規劃婚禮應是令人興奮而非繁瑣的過程。但是，很多新人仍花費大量時間進行行政工作，包括填寫試算表、追蹤 RSVP 回覆、安排處理及統計禮金，甚至無法全心享受訂婚的喜悅。</ZhPara>
-        <EnPara>Planning a wedding should be exciting, not stressful. Yet many couples still spend countless hours managing invitations, guest lists, tracking gifts through spreadsheets, messaging apps and manual administration.</EnPara>
-        <ZhPara>美滿嫁期的使命是：通過現代化的婚禮管理，讓婚禮策劃更輕鬆、嘉賓的祝福更美好。我們的使命是為新人提供安全、透明且方便的平台，簡化婚禮規劃的同時，為賓客提供無縫的贈禮體驗。</ZhPara>
+        <ZhPara>婚禮是人生最重要的時刻之一，但籌備過程往往充滿繁瑣的行政工作。由印製請帖、統計賓客名單、跟進 RSVP 回覆，到婚宴當天處理禮金及記錄收款，傳統婚禮流程既耗時亦容易出現遺漏。</ZhPara>
+        <EnPara>Planning a wedding should be exciting, not stressful. Yet many couples still spend countless hours managing invitations, guest lists, RSVP responses and wedding gift records through spreadsheets, messaging apps and manual administration.</EnPara>
+        <ZhPara>美滿嫁期的成立，源於我們相信婚禮管理可以更簡單、更現代化。我們希望透過科技，讓新人能夠以更方便、更透明及更環保的方式管理婚禮事宜，同時讓親友送上祝福變得更加輕鬆。</ZhPara>
         <EnPara>Merry Marry was created to modernise the wedding gifting experience. Our mission is to provide couples with a secure, transparent and convenient platform that simplifies wedding planning while giving guests a seamless gifting experience.</EnPara>
-        <ZhPara>我們相信，新人應把時間和精力投放在人生重要的時刻。</ZhPara>
+        <ZhPara>我們相信，新人應該把時間留給人生最重要的時刻，而不是花在行政工作上。</ZhPara>
         <EnPara>We believe couples should spend their time creating memories, not managing paperwork.</EnPara>
       </Section>
 
       {/* Section 3: How It Works */}
-      <Section label="如何使用 How It Works">
+      <Section label="如何運作 How It Works">
         {STEPS.map((s, i) => (
           <div key={i} className="flex gap-4 mb-5">
             <div className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-0.5" style={{ background: "#4A2060", color: "#F0E2C0" }}>
@@ -136,67 +136,58 @@ export default function LandingPage() {
       <Section label="收費方式 Fees">
         <div className="flex gap-4 items-start">
           <div className="flex-1">
-            <ZhPara>建立婚禮頁面完全免費。</ZhPara>
+            <p className="mb-2" style={{ fontFamily: "var(--font-noto)", fontSize: "0.82rem", color: "#4A2060", lineHeight: 1.85 }}>
+              建立婚禮頁面<strong>完全免費</strong>。
+            </p>
             <EnPara>Creating a wedding page is completely free.</EnPara>
 
             <div className="mt-3 mb-1">
-              <ZhPara>沒有以下費用：</ZhPara>
-              {["無需安裝費", "無月費訂閱", "無年費"].map((t) => (
-                <div key={t} className="flex gap-2 items-center ml-2">
-                  <span style={{ color: "#4A2060" }}>·</span>
-                  <ZhPara>{t}</ZhPara>
-                </div>
+              <ZhPara>無需支付：</ZhPara>
+              {["開戶費", "設定費", "月費", "年費"].map((t) => (
+                <p key={t} style={{ fontFamily: "var(--font-noto)", fontSize: "0.82rem", color: "#4A2060", lineHeight: 1.85 }}>{t}</p>
               ))}
-              <div className="mt-1">
+              <div className="mt-2">
+                <EnPara>There are:</EnPara>
                 {["No setup fees", "No monthly subscriptions", "No annual fees"].map((t) => (
-                  <div key={t} className="flex gap-2 items-center ml-2">
-                    <span style={{ color: "#6B3589" }}>·</span>
-                    <EnPara>{t}</EnPara>
-                  </div>
+                  <p key={t} style={{ fontSize: "0.78rem", color: "#6B3589", lineHeight: 1.85 }}>{t}</p>
                 ))}
               </div>
             </div>
 
             <div className="mt-3">
-              <ZhPara>只有在成功處理心意後，平台會收取 4% 至業及服務費。</ZhPara>
+              <ZhPara>只有成功收取網上禮金時，平台才會收取 4% 交易及服務費。</ZhPara>
               <EnPara>A 4% transaction and service fee applies only to successfully processed online contributions.</EnPara>
             </div>
 
             <div className="mt-3">
               <ZhPara>此費用包括：</ZhPara>
-              {FEE_ITEMS.map((f) => (
-                <div key={f.zh} className="flex gap-2 items-center ml-2">
-                  <span style={{ color: "#4A2060" }}>·</span>
-                  <span style={{ fontFamily: "var(--font-noto)", fontSize: "0.8rem", color: "#4A2060" }}>{f.zh}</span>
-                </div>
+              {["支付處理費用", "平台營運及維護", "交易管理系統", "防欺詐及安全監控"].map((t) => (
+                <p key={t} style={{ fontFamily: "var(--font-noto)", fontSize: "0.82rem", color: "#4A2060", lineHeight: 1.85 }}>{t}</p>
               ))}
-              <div className="mt-1">
+              <div className="mt-2">
                 <EnPara>This fee covers:</EnPara>
-                {FEE_ITEMS.map((f) => (
-                  <div key={f.en} className="flex gap-2 items-center ml-2">
-                    <span style={{ color: "#6B3589" }}>·</span>
-                    <EnPara>{f.en}</EnPara>
-                  </div>
+                {["Payment processing", "Platform operations", "Transaction management", "Fraud prevention and security monitoring"].map((t) => (
+                  <p key={t} style={{ fontSize: "0.78rem", color: "#6B3589", lineHeight: 1.85 }}>{t}</p>
                 ))}
               </div>
             </div>
 
             <div className="mt-4 p-3 rounded-lg" style={{ background: "#F5F0FA" }}>
-              <p className="text-xs font-semibold mb-2" style={{ fontFamily: "var(--font-noto)", color: "#4A2060" }}>收費示例 Example</p>
-              <div className="flex flex-col gap-1">
+              <p className="text-xs font-semibold mb-2" style={{ fontFamily: "var(--font-noto)", color: "#4A2060" }}>收費例子 Example</p>
+              <div className="flex flex-col gap-2">
                 {[
-                  ["賓客金額 (HK)", "Guest Contribution: HK$1,000"],
-                  ["交易及服務費 (4%): HK$40", "Transaction & Service Fee (4%): HK$40"],
-                  ["新人實收金額: HK$960", "Amount Received by Couple: HK$960"],
+                  ["賓客送出禮金：HK$1,000", "Guest Contribution: HK$1,000"],
+                  ["平台交易及服務費（4%）：HK$40", "Transaction & Service Fee (4%): HK$40"],
+                  ["新人實收金額：HK$960", "Amount Received by Couple: HK$960"],
                 ].map(([zh, en]) => (
                   <div key={zh}>
-                    <p style={{ fontFamily: "var(--font-noto)", fontSize: "0.75rem", color: "#4A2060" }}>{zh}</p>
-                    <p style={{ fontSize: "0.72rem", color: "#6B3589" }}>{en}</p>
+                    <p style={{ fontFamily: "var(--font-noto)", fontSize: "0.8rem", color: "#4A2060" }}>{zh}</p>
+                    <p style={{ fontSize: "0.75rem", color: "#6B3589" }}>{en}</p>
                   </div>
                 ))}
               </div>
-              <p className="mt-2" style={{ fontFamily: "var(--font-noto)", fontSize: "0.72rem", color: "#4A2060" }}>以上費用之外，沒有任何隱藏費或額外附加費用。</p>
-              <p style={{ fontSize: "0.7rem", color: "#6B3589" }}>There are no hidden charges or additional withdrawal fees.</p>
+              <p className="mt-3" style={{ fontFamily: "var(--font-noto)", fontSize: "0.8rem", color: "#4A2060" }}>除上述費用外，並無任何隱藏收費或額外提現費用。</p>
+              <p style={{ fontSize: "0.75rem", color: "#6B3589" }}>There are no hidden charges or additional withdrawal fees.</p>
             </div>
           </div>
 
@@ -208,21 +199,21 @@ export default function LandingPage() {
       </Section>
 
       {/* Section 6: Security & Trust */}
-      <Section label="安全及信任 Security & Trust">
-        <ZhPara>每一筆心意都值得被安全保護。</ZhPara>
+      <Section label="安全與信任 Security & Trust">
+        <ZhPara>每一份祝福都值得被安全地傳遞。</ZhPara>
         <EnPara>Every contribution deserves to be delivered securely.</EnPara>
-        <ZhPara>所有交易均透過監管且受信任的支付提供商處理，使用業界標準的安全協定。</ZhPara>
+        <ZhPara>所有交易均透過受監管及可信賴的支付服務供應商處理，並採用業界標準加密技術保障資料安全。</ZhPara>
         <EnPara>All transactions are processed through regulated and trusted payment providers using industry-standard security protocols.</EnPara>
-        <ZhPara>手本交易記錄提供透明度和安心感，讓新人及賓客都安心。</ZhPara>
+        <ZhPara>平台提供完整交易記錄及收款紀錄，讓新人及賓客均可安心查閱。</ZhPara>
         <EnPara>Complete transaction records provide transparency and peace of mind for both couples and guests.</EnPara>
       </Section>
 
       {/* Section 7: Our Commitment */}
       <Section label="我們的承諾 Our Commitment">
-        <ZhPara>我們正在努力讓婚禮籌備更加簡單、更加愉快，讓每一位新人都能以輕鬆、安心和信任的方式，迎接人生最重要的時刻。</ZhPara>
+        <ZhPara>我們致力讓婚禮回歸幸福本質，減少繁瑣行政工作，讓新人能夠專注享受人生最重要的時刻。</ZhPara>
         <EnPara>We are committed to making wedding planning simpler, more transparent and more enjoyable for modern couples.</EnPara>
-        <ZhPara>美滿嫁期正在成為全港最受信賴的婚禮禮金管理及婚禮管理平台，讓每一份祝福都能以便捷、安心及信任的方式，送達婚禮當天。</ZhPara>
-        <EnPara>Merry Marry aims to be Hong Kong's most trusted wedding gifting and wedding management platform, helping every blessing reach its destination with simplicity, convenience and trust.</EnPara>
+        <ZhPara>美滿嫁期希望成為香港最值得信賴的婚禮禮金及婚禮管理平台，讓每一份祝福都能更簡單地傳遞。</ZhPara>
+        <EnPara>Merry Marry aims to become Hong Kong's most trusted wedding gifting and wedding management platform, helping every blessing reach its destination with simplicity, convenience and trust.</EnPara>
       </Section>
 
       {/* CTA */}
@@ -277,73 +268,67 @@ function NavItem({ href, onClick, children }: { href: string; onClick: () => voi
 
 const STEPS = [
   {
-    titleZh: "第一步：建立婚禮頁面",
+    titleZh: "第一步：建立專屬婚禮頁面",
     titleEn: "Step 1: Create Your Wedding Page",
-    descZh: "建立充滿婚禮細節、加入婚禮日期、時間、地點、場地照片、婚禮故事及按自己的要求。",
+    descZh: "建立專屬婚禮網站，加入婚禮日期、地點、流程安排、婚照及新人故事，打造屬於您們的婚禮專頁。",
     descEn: "Create a personalised wedding page with your wedding details, schedule, photos and story as a couple.",
   },
   {
-    titleZh: "第二步：發送電子邀請",
+    titleZh: "第二步：發送電子請帖",
     titleEn: "Step 2: Share Your Digital Invitation",
-    descZh: "透過 WhatsApp、電郵或社交媒體分享你的婚禮頁面及電子請柬，輕鬆且節省印製和郵費費用。",
+    descZh: "透過 WhatsApp、電郵或社交媒體分享婚禮頁面及電子請帖，無需印刷及郵寄傳統請帖。",
     descEn: "Share your wedding page and digital invitation instantly through WhatsApp, email or social media without printing or postage costs.",
   },
   {
     titleZh: "第三步：管理 RSVP 回覆",
     titleEn: "Step 3: Manage Guest RSVPs",
-    descZh: "賓客可直接透過婚禮頁面進行回覆，系統會自動整理賓客的出席及出席安排。",
+    descZh: "親友可直接於婚禮頁面確認出席情況，系統會自動整理賓客回覆及出席紀錄。",
     descEn: "Guests can RSVP directly through your wedding page, with responses automatically organised and tracked.",
   },
   {
     titleZh: "第四步：安全收取禮金",
     titleEn: "Step 4: Receive Contributions Securely",
-    descZh: "賓客可以通過安全的在線平台上傳心意金額及祝福，所有交易記錄均會自動記錄，方便夫婦查閱及管理。",
+    descZh: "賓客可透過安全的網上支付方式送上禮金及祝福。所有交易均會即時記錄，方便新人查閱及管理。",
     descEn: "Guests can send wedding contributions securely online. Every contribution is recorded automatically for complete transparency.",
   },
 ];
 
 const REASONS = [
   {
-    titleZh: "節省時間 Save Time",
+    titleZh: "節省時間",
     titleEn: "Save Time",
-    descZh: "無需進行繁瑣的 RSVP，系統幫助追蹤及管理賓客回覆。",
+    descZh: "無需逐一統計 RSVP、管理賓客名單或手動整理禮金記錄。",
     descEn: "Eliminate manual guest tracking, spreadsheets and gift record management.",
   },
   {
-    titleZh: "降低成本 Reduce Costs",
+    titleZh: "節省成本",
     titleEn: "Reduce Costs",
-    descZh: "減少花費於邀請卡等印刷和郵費費用，讓婚禮策劃更省錢。",
+    descZh: "減少請帖印刷、郵寄及行政成本，讓婚禮預算更有效運用。",
     descEn: "Reduce spending on invitation cards, printing, postage and administration.",
   },
   {
-    titleZh: "友善環境 Environmentally Friendly",
+    titleZh: "支持環保",
     titleEn: "Environmentally Friendly",
-    descZh: "透過電子邀請取代傳統紙質邀請，節省資源和不必要的印刷物。",
+    descZh: "透過電子請帖及數碼化管理流程，減少紙張浪費及不必要的印刷物料。",
     descEn: "Reduce paper consumption through digital invitations and online wedding management.",
   },
   {
-    titleZh: "安全可靠 Secure & Reliable",
+    titleZh: "安全可靠",
     titleEn: "Secure & Reliable",
-    descZh: "所有交易均通過可靠的第三方支付系統完成，確保安全可靠。",
+    descZh: "所有交易均透過可信賴的支付合作夥伴處理，並設有完整電子記錄。",
     descEn: "Every transaction is processed through trusted payment partners and recorded digitally.",
   },
   {
-    titleZh: "於你婚前收取禮金 Receive Contributions Before Your Wedding",
+    titleZh: "提前收取祝福",
     titleEn: "Receive Contributions Before Your Wedding",
-    descZh: "婚禮策劃讓你在婚前取得心意禮金，透過收取禮金讓你清楚了解及時估算婚禮的費用及現金流量。",
+    descZh: "婚禮籌備期間需要支付大量訂金及前期開支。透過美滿嫁期，新人可於婚禮前提早收到部分禮金，讓婚禮資金安排更具彈性。",
     descEn: "Wedding planning often requires significant upfront expenses. Receiving contributions before the wedding helps couples manage their budget and cash flow more effectively.",
   },
   {
-    titleZh: "方便每一位賓客 Convenient for Every Guest",
+    titleZh: "方便每一位親友",
     titleEn: "Convenient for Every Guest",
-    descZh: "無論是到場出席婚禮，未能提前認識新人，還是只想送上祝福的賓客，均可方便地在線送禮。",
+    descZh: "無論未能出席婚禮、未有時間與新人見面，或希望提早送上祝福，親友都可透過美滿嫁期安全地送上禮金，讓每一份心意準時送達。",
     descEn: "Whether guests are unable to attend the wedding, don't have the opportunity to meet the couple beforehand, or simply wish to send their blessings early, Merry Marry provides a secure and convenient way to contribute online.",
   },
 ];
 
-const FEE_ITEMS = [
-  { zh: "付款手續費", en: "Payment processing" },
-  { zh: "平台運營費用", en: "Platform maintenance" },
-  { zh: "交易管理費", en: "Transaction management" },
-  { zh: "欺詐預防及安全監控", en: "Fraud prevention and security monitoring" },
-];
